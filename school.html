@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <style>
+
+#pirmais-paragrafs{
+    font-weight: 40px;
+    margin-top: 0px;
+}
+#pirmais-paragrafs:hover{
+    font-size: 50px;
+}
+p{
+    color:chocolate
+}
+.red {
+color:red;
+font-weight: bold;
+}
+#header {
+    width: 100%;
+    height: 150px;
+    background-color: darkcyan;
+}
+#sidebar {
+    width: 30%;
+    height: 600px;
+    background-color: darkolivegreen;
+    float: left;
+}
+#content {
+    width: 70%;
+    height: 600px;
+    background-color: darkturquoise;
+    margin-left: 200px;
+}   
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: firebrick;
+}  
+h1{
+    margin-top:0px ;
+} 
+
+li:hover {
+    text-decoration: underline;
+}
+.latvija{
+    width: 500px;
+}
+
+ .attels-1 {
+     width: 50px;
+     position: absolute;
+     top: 440px;
+     left: 600px;
+     transition: opacity 2s, scale 2s, transform 2s;
+ }
+ .attels-2{
+     width: 50px;
+     position: absolute;
+     top: 510px;
+     left: 750px;
+     transition: top 2s;
+ }
+
+ .attels-1:hover {
+     opacity: 0.5;
+     transform: rotate(90deg);
+     scale: 8;
+ }
+
+ .attels-2:hover {
+     top: 450px;
+ }
+ karte {
+    position: relative;
+}
+.spriditis {
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100px;
+animation-name: go;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+
+@keyframes go {
+    from {
+top: 0px;
+left: 0px;
+    }
+
+25% {
+    top: 10px;
+    left: 500px;
+}
+50% {
+top: 200px;
+left: 500px;
+}
+75% {
+top: 200px;
+left: 0px;
+}
+    to {
+top: 0px;
+left: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+ body {
+background-color: cadetblue;
+ }
+ #sidebar {
+     display: none;
+ }
+#content {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+</style>
+        </head>
+        <body>
+            <div id="header"></div>
+            <h1>School-Skola</h1>
+        </div>
+            <div id="sidebar"></div>
+            <div id="content">
+                <p id="pirmais-paragrafs">Teksts. Teksts.
+                    </p>
+                    <p>
+                        Teksts
+                    </p>
+                    <ul>
+                        <li class="red">Pirmais elements</li>
+                        <li class="red">Otrais elemants</li>
+                        <li>Trešais elements</li>
+                    </u>
+                    <div class='karte'>
+
+                   <img class='latvija' src="Karte latvia.png" alt=''>
+                   <img class='attels-1' src='MicrosoftTeams-image.png' alt=''>
+                   <img class='attels-2' src='tree.svg' alt="">
+                   <img class='spriditis' src='sprīdītis.png' alt="">
+                    </div>
+            </div>
+        
+            <div id="footer"></div>
+        </body>
+</html>
